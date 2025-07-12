@@ -2,7 +2,9 @@
 
 this is my submission of AI for networking project 
 I am Aziz Ahmed ahmed3@gitam.in only member of my team
-I learned quite a bit about networks and related stuff while making this and some other incomplete and failed projects which didnt work out very well. 
+I learned quite a bit about networks and related stuff while making this and some other incomplete and failed projects which didnt work out very well and i couldnt submit. 
+
+You can see PROJECT_REPORT.md for a proper complete report on all implementations details.
 
 # URL Threat Detection System
 
