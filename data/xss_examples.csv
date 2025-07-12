@@ -1,0 +1,21 @@
+url,label
+"https://example.com/search?q=<script>alert('xss')</script>",xss
+"https://site.com/page?input=<img src=x onerror=alert(1)>",xss
+"https://test.com/comment?text=<svg onload=alert(1)>",xss
+"https://app.com/form?data=javascript:alert('xss')",xss
+"https://web.com/search?q=<iframe src=javascript:alert(1)>",xss
+"https://example.com/user?name=<script>document.cookie</script>",xss
+"https://site.com/page?input=<body onload=alert(1)>",xss
+"https://test.com/search?q=<img src='' onerror=alert(1)>",xss
+"https://app.com/form?data=<script>window.location='http://evil.com'</script>",xss
+"https://web.com/comment?text=<a href='javascript:alert(1)'>click</a>",xss
+"https://example.com/search?q=eval(String.fromCharCode(97,108,101,114,116,40,49,41))",xss
+"https://site.com/page?input=<meta http-equiv='refresh' content='0;url=javascript:alert(1)'>",xss
+"https://test.com/form?data=<object data='javascript:alert(1)'>",xss
+"https://app.com/search?q=<embed src='javascript:alert(1)'>",xss
+"https://web.com/comment?text=<form><button formaction='javascript:alert(1)'>",xss
+"https://example.com/page?input=<input type='image' src='x' onerror='alert(1)'>",xss
+"https://site.com/search?q=<video><source onerror='alert(1)'>",xss
+"https://test.com/form?data=<audio src='x' onerror='alert(1)'>",xss
+"https://app.com/page?input=<style>@import'javascript:alert(1)';</style>",xss
+"https://web.com/search?q=<link rel='stylesheet' href='javascript:alert(1)'>",xss

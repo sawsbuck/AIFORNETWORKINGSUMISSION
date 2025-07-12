@@ -1,0 +1,21 @@
+url,label
+"https://example.com/user?id=1' OR '1'='1",sqli
+"https://site.com/login?user=admin'--&pass=test",sqli
+"https://test.com/product?id=1 UNION SELECT * FROM users",sqli
+"https://app.com/search?q='; DROP TABLE users; --",sqli
+"https://web.com/page?id=1' AND 1=1--",sqli
+"https://example.com/user?name=admin' OR 1=1#",sqli
+"https://site.com/login?user=admin'/*&pass=test",sqli
+"https://test.com/product?id=1'; INSERT INTO users VALUES('hacker','pass'); --",sqli
+"https://app.com/search?q=1' OR '1'='1' ORDER BY 1--",sqli
+"https://web.com/page?id=1' UNION ALL SELECT version()--",sqli
+"https://example.com/user?id=1' AND (SELECT COUNT(*) FROM users) > 0--",sqli
+"https://site.com/login?user=admin' OR EXISTS(SELECT * FROM users)--",sqli
+"https://test.com/product?id=1' AND ASCII(SUBSTRING(user(),1,1))>64--",sqli
+"https://app.com/search?q=1' OR 1=1 LIMIT 1--",sqli
+"https://web.com/page?id=1' UNION SELECT user,password FROM admin--",sqli
+"https://example.com/user?id=1' AND '1'='1' AND '1'='1",sqli
+"https://site.com/login?user=admin' AND SLEEP(5)--",sqli
+"https://test.com/product?id=1' OR (SELECT COUNT(*) FROM information_schema.tables)>0--",sqli
+"https://app.com/search?q=1' HAVING 1=1--",sqli
+"https://web.com/page?id=1' GROUP BY 1,2,3--",sqli
