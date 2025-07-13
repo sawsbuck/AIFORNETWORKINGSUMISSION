@@ -1,4 +1,10 @@
-# URL Threat Detection System: Comprehensive Project Report
+#PROBLEM STATEMENT: AI FOR NETWORKING
+TEAM: AZIZ
+MEMBERS:
+name: Aziz Ahmed
+mail: aahmed3@gitam.in
+phone: 7893794287
+# URL XSS and SQLI attacks Detection :Project Report
 
 ## Table of Contents
 
@@ -15,7 +21,7 @@
 
 ## Executive Summary
 
-The URL Threat Detection System is a machine learning-powered web application designed to identify and classify cybersecurity threats in URLs. The system specifically targets two critical web application vulnerabilities: Cross-Site Scripting (XSS) and SQL Injection attacks. Built using Python and Streamlit, the application provides real-time threat detection with confidence scoring and detailed security analysis.
+This project is a machine learning-powered web application designed to identify and classify cybersecurity threats in URLs. The system specifically targets two critical web application vulnerabilities: Cross-Site Scripting (XSS) and SQL Injection attacks. Built using Python and Streamlit, the application provides real-time threat detection with confidence scoring and detailed security analysis.
 
 ### Key Features
 - Real-time URL threat detection
